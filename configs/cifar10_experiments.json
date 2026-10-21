@@ -1,0 +1,68 @@
+{
+  "shared": {
+    "data_directory": "data",
+    "results_directory": "results/week04",
+    "epochs": 15,
+    "seed": 42,
+    "validation_ratio": 0.1,
+    "num_workers": 0
+  },
+  "experiments": {
+    "baseline": {
+      "model": "cnn",
+      "optimizer": "adamw",
+      "learning_rate": 0.001,
+      "batch_size": 128,
+      "weight_decay": 0.0001,
+      "augmentation": false
+    },
+    "exp_model_mlp": {
+      "model": "mlp",
+      "optimizer": "adamw",
+      "learning_rate": 0.001,
+      "batch_size": 128,
+      "weight_decay": 0.0001,
+      "augmentation": false
+    },
+    "exp_augmentation": {
+      "model": "cnn",
+      "optimizer": "adamw",
+      "learning_rate": 0.001,
+      "batch_size": 128,
+      "weight_decay": 0.0001,
+      "augmentation": true
+    },
+    "exp_learning_rate": {
+      "model": "cnn",
+      "optimizer": "adamw",
+      "learning_rate": 0.0003,
+      "batch_size": 128,
+      "weight_decay": 0.0001,
+      "augmentation": false
+    },
+    "exp_batch_size": {
+      "model": "cnn",
+      "optimizer": "adamw",
+      "learning_rate": 0.001,
+      "batch_size": 64,
+      "weight_decay": 0.0001,
+      "augmentation": false
+    },
+    "exp_no_weight_decay": {
+      "model": "cnn",
+      "optimizer": "adamw",
+      "learning_rate": 0.001,
+      "batch_size": 128,
+      "weight_decay": 0.0,
+      "augmentation": false
+    },
+    "exp_optimizer_sgd": {
+      "model": "cnn",
+      "optimizer": "sgd",
+      "learning_rate": 0.001,
+      "batch_size": 128,
+      "weight_decay": 0.0001,
+      "augmentation": false
+    }
+  }
+}

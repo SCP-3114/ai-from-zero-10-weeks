@@ -1,0 +1,13 @@
+{
+  "experiment_name": "fashion_mnist_mlp",
+  "data_directory": "data",
+  "results_directory": "results",
+  "seed": 42,
+  "epochs": 10,
+  "batch_size": 128,
+  "learning_rate": 0.001,
+  "hidden_size": 128,
+  "dropout": 0.2,
+  "validation_ratio": 0.1,
+  "num_workers": 0
+}
